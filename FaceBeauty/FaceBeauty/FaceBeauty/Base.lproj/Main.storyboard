@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vry-to-rzl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BlI-1P-Tzr">
+                                        <rect key="frame" x="18" y="688" width="378" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="y5U-b6-mmQ"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="bigEyeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="wpc-l8-bIh"/>
+                                        </connections>
+                                    </slider>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WR9-5b-3uS">
+                                        <rect key="frame" x="327" y="747" width="49" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="47" id="ewF-OI-tru"/>
+                                            <constraint firstAttribute="height" constant="31" id="mAS-Yw-eaR"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="showSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="U6e-xc-c9z"/>
+                                        </connections>
+                                    </switch>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9AB-TZ-Yga">
+                                        <rect key="frame" x="18" y="619" width="378" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="xKs-iA-LrW"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="thinFaceSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dit-vZ-VqH"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WR9-5b-3uS" secondAttribute="trailing" constant="40" id="2A8-z4-I4C"/>
+                                    <constraint firstItem="WR9-5b-3uS" firstAttribute="top" secondItem="BlI-1P-Tzr" secondAttribute="bottom" constant="30" id="3bh-eK-7G8"/>
+                                    <constraint firstItem="BlI-1P-Tzr" firstAttribute="top" secondItem="9AB-TZ-Yga" secondAttribute="bottom" constant="40" id="L4E-16-2cj"/>
+                                    <constraint firstAttribute="trailing" secondItem="BlI-1P-Tzr" secondAttribute="trailing" constant="20" id="LFJ-YB-T0W"/>
+                                    <constraint firstAttribute="trailing" secondItem="9AB-TZ-Yga" secondAttribute="trailing" constant="20" id="N6I-fo-p9S"/>
+                                    <constraint firstAttribute="bottom" secondItem="WR9-5b-3uS" secondAttribute="bottom" constant="40" id="lhU-8o-CSD"/>
+                                    <constraint firstItem="9AB-TZ-Yga" firstAttribute="leading" secondItem="Vry-to-rzl" secondAttribute="leading" constant="20" id="vW8-bN-ooc"/>
+                                    <constraint firstItem="BlI-1P-Tzr" firstAttribute="leading" secondItem="Vry-to-rzl" secondAttribute="leading" constant="20" id="wB6-FM-tfF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Vry-to-rzl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1g1-MW-KQi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vry-to-rzl" secondAttribute="trailing" id="jFB-7i-qUe"/>
+                            <constraint firstItem="Vry-to-rzl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="skP-db-mtY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vry-to-rzl" secondAttribute="bottom" id="spL-5W-DaO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+</document>
